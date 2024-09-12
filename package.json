@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " rm -rf .parcel-cache  .build && parcel && NODE_ENV=development parcel --log-level info src/index.html --dist-dir dist/dev --port 8080 ",
+    "build": " rm -rf .parcel-cache .build && parcel build && NODE_ENV=production parcel build --log-level info src/index.html --no-source-maps --dist-dir dist/prod --no-cache"
+  },
+  "source": "src/index.html",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "parcel-transformer-transcrypt": "^1.0.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

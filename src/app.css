@@ -1,0 +1,62 @@
+body {
+  background-color: crimson;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  width: 90%;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.AppHeader {
+  text-align: center;
+  color: crimson;
+}
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+}
+.encryptForm,
+.decryptForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.path-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+#file-input,
+#keyinput {
+  width: 100%;
+  height: 40px;
+}
+.form-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font: 1em sans-serif;
+  color: cornsilk;
+  background-color: crimson;
+}
+@media screen and (min-width: 1000px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 35%;
+    padding: 1em;
+  }
+
+  .form-button {
+    border-radius: 10px;
+  }
+}

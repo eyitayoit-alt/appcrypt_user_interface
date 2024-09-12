@@ -1,0 +1,5 @@
+node_modules/
+.build/
+.parcel-cache/
+.ruff_cache/
+dist/
